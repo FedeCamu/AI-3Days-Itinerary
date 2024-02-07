@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
+    
+    
+    <title>AI City Itinary Generator</title>
 </head>
 <body>
+    <div class="container">
+
+        <header>
+            <h1>AI City Itinary Generator</h1>
+        </header>
+
+        <main> 
+            <div class="form-container">          
+            <form id="itinerary-generator-form">
+                <input 
+                type="text" 
+                placeholder="Enter the city you want to visit and duration of your trip..." 
+                autofocus 
+                required 
+                autocomplete="off" 
+                class="instructions"
+                id="user-instructions"/>
+                <input type="submit" class="submit-button"/>
+            </form>
+             <div class="hint">i.e.: 3 Days in Rome</div>
+            
+            </div> 
+
+            <div class="itinerary hidden" id="itinerary">           
+            </div>
+        </main>
+
+        <footer>This AI project was coded by <a href="https://federica-c-portfolio.netlify.app/" target="_blank">Federica C.</a>
+        <br>
+        Open-sourced on <a href="https://github.com/FedeCamu/AI-3Days-Itinerary" target="_blank">GitHub</a> and hosted on <a href="https://italian-poems-generator-ai.netlify.app/" target="_blank">Netlify</a>.
+        </footer>
+
+    </div>     
+
+    <script src="src/index.js"></script>
+
+       
     
 </body>
 </html>
